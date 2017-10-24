@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+ 	
+ 	<definition name="landing.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+ 		<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/templates/{1}/pages/landing.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="category.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/templates/{1}/pages/category.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" /> 
+  	</definition>
+  	
+  	
+  	<definition name="items.manufacturer.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/templates/{1}/pages/items.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" /> 
+  	</definition>
+  	
+  	<definition name="product.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/templates/{1}/pages/product.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="review.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/common/catalog/review.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="search.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/templates/{1}/pages/search.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="customer.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/templates/{1}/pages/customer.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="content.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/templates/{1}/pages/content.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	
+  	<!-- Shopping cart TO ADD HEADER, NAV, FOOTER-->
+  	<definition name="maincart.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  	  	<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/cart/cart.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<!-- Contact us -->
+  	<definition name="contactus.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/merchant/contactus.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<!-- Rate product -->
+  	<definition name="rating.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/common/catalog/rateProduct.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<!-- Customer registration - account - orders -->
+  	<definition name="register.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/register.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	  	
+  	<definition name="customerAccount.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/profile.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="customerPassword.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/changePassword.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="customerAddress.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/address.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="editCustomerAddress.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/editAddress.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="customerOrders.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/orders.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="customerOrder.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/order.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="customerLogon.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/customer/logon.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<!-- One page checkout -->
+  	<definition name="checkout.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/checkout/checkout.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<definition name="confirmation.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  	  	<put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" />
+  		<put-attribute name="body" value="/WEB-INF/views/common/checkout/confirmation.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	
+  	<!--  page not found -->
+  	<definition name="404.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/common/notFound.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<!-- timeout -->
+  	<definition name="timeout.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/common/timeout.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+  	<!-- access denied -->
+  	<definition name="accessDenied.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/error/access_denied.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+   	<definition name="accessDenied.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		<put-attribute name="body" value="/WEB-INF/views/error/access_denied.jsp" />
+  	</definition> 
+  	
+  	<!-- generic error -->
+  	<definition name="error.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		 <put-attribute name="header" value="/WEB-INF/views/templates/{1}/sections/header.jsp" />
+  		<put-attribute name="navbar" value="/WEB-INF/views/templates/{1}/sections/navbar.jsp" /> 
+  		<put-attribute name="body" value="/WEB-INF/views/error/generic_error.jsp" />
+  		<put-attribute name="footer" value="/WEB-INF/views/templates/{1}/sections/footer.jsp" />
+  	</definition>
+  	
+   	<definition name="accessDenied.*" template="/WEB-INF/views/templates/{1}/catalogLayout.jsp">
+  		<put-attribute name="body" value="/WEB-INF/views/error/generic_error.jsp" />
+  	</definition> 	
+
+  	
+</tiles-definitions>

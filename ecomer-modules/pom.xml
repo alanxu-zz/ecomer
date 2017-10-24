@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>me.alanx.ecomer</groupId>
+		<artifactId>ecomer</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>ecomer-modules</artifactId>
+	<packaging>pom</packaging>
+	<modules>
+		<module>ecomer-modules-services</module>
+		<module>ecomer-modules-shipping</module>
+		<module>ecomer-modules-payment</module>
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>me.alanx.ecomer</groupId>
+			<artifactId>ecomer-spi</artifactId>
+			<version>${ecomer-spi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+	</dependencies>
+</project>

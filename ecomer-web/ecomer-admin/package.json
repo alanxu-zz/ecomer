@@ -1,0 +1,28 @@
+{
+  "name": "ecomer-admin",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Xu",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-table": "^1.11.2",
+    "jquery": "^3.2.1",
+    "jquery-menu-aim": "^1.1.0",
+    "string-natural-compare": "^2.0.2",
+    "x-editable": "^1.5.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
+    "babel-core": "^5.8.3",
+    "babel-loader": "^5.3.2",
+    "file-loader": "^0.8.4",
+    "url-loader": "^0.5.6",
+    "webpack": "^3.3.0"
+  }
+}

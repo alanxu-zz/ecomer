@@ -1,0 +1,29 @@
+[ {
+  "name" : "ADMIN_ORDER",
+  "permissions" : [ "AUTH", "ORDER" ],
+  "type" : "ADMIN"
+}, {
+  "name" : "ADMIN_CATALOGUE",
+  "permissions" : [ "AUTH", "PRODUCTS" ],
+  "type" : "ADMIN"
+}, {
+  "name" : "SUPERADMIN",
+  "permissions" : [ "TAX", "AUTH", "SUPERADMIN", "SHIPPING", "STORE_ADMIN", "ORDER", "PAYMENT", "STORE", "CONTENT", "PRODUCTS", "CUSTOMER" ],
+  "type" : "ADMIN"
+}, {
+  "name" : "ADMIN",
+  "permissions" : [ "TAX", "AUTH", "SHIPPING", "STORE_ADMIN", "ORDER", "PAYMENT", "STORE", "CONTENT", "PRODUCTS", "CUSTOMER" ],
+  "type" : "ADMIN"
+}, {
+  "name" : "ADMIN_CONTENT",
+  "permissions" : [ "CONTENT" ],
+  "type" : "ADMIN"
+}, {
+  "name" : "CUSTOMER",
+  "permissions" : [ "AUTH_CUSTOMER" ],
+  "type" : "CUSTOMER"
+}, {
+  "name" : "ADMIN_STORE",
+  "permissions" : [ "TAX", "AUTH", "SHIPPING", "PAYMENT", "STORE", "CUSTOMER" ],
+  "type" : "ADMIN"
+} ]

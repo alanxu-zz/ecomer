@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>me.alanx.ecomer</groupId>
+	<artifactId>ecomer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<!-- 
+	<parent> 
+		<groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-starter-parent</artifactId> 
+		<version>1.5.4.RELEASE</version> 
+		<relativePath/> lookup parent from repository 
+	</parent> 
+	-->
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<ecomer.version>0.0.1-SNAPSHOT</ecomer.version>
+		<ecomer-spi.version>0.0.1-SNAPSHOT</ecomer-spi.version>
+		<ecomer-core.version>0.0.1-SNAPSHOT</ecomer-core.version>
+		<ecomer-model.version>0.0.1-SNAPSHOT</ecomer-model.version>
+		<ecomer-services.version>0.0.1-SNAPSHOT</ecomer-services.version>
+		<ecomer-cms.version>0.0.1-SNAPSHOT</ecomer-cms.version>
+		<ecomer-integration.version>0.0.1-SNAPSHOT</ecomer-integration.version>
+		<ecomer-modules-payment.version>0.0.1-SNAPSHOT</ecomer-modules-payment.version>
+		<ecomer-web-core.version>0.0.1-SNAPSHOT</ecomer-web-core.version>
+		<ecomer-modules-services.version>0.0.1-SNAPSHOT</ecomer-modules-services.version>
+
+		<commons-validator.version>1.6</commons-validator.version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<!-- testing properties -->
+		<!--<dbh2.version>1.4.187</dbh2.version> -->
+
+		<javax.inject.version>1</javax.inject.version>
+		<javax.el.version>2.2.4</javax.el.version>
+
+		<jackson-version>2.7.4</jackson-version>
+	</properties>
+	<modules>
+		<module>ecomer-model</module>
+		<module>ecomer-spi</module>
+		<module>ecomer-core</module>
+		<module>ecomer-cms</module>
+		<module>ecomer-modules</module>
+		<module>ecomer-web</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<!-- Import dependency management from Spring Boot -->
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>1.5.4.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+</project>

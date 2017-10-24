@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: ecomer-modules
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: alanxu
+Implementation-Vendor-Id: me.alanx.ecomer
+Build-Jdk: 1.8.0_31
+Implementation-URL: http://projects.spring.io/spring-boot/ecomer/ecome
+ r-modules/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
